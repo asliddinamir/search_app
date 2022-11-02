@@ -78,7 +78,7 @@ body {
 
 
 .stats .title{
-    color: rgb(190, 190, 53);
+    color: yellow;
     font-size: 2rem;
 }
 
@@ -86,7 +86,24 @@ body {
     color: #ccc;
     line-height: 2;
 }
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.info h1 {
+    color: yellow;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.info h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
 footer {
     position: absolute;
     position: fixed;
@@ -114,5 +131,8 @@ footer {
 @media(max-width:1140px) {
     .card {
         width: 90%;
+    }
+    .info h2 {
+        text-align: center;
     }
 }

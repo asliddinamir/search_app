@@ -3,6 +3,8 @@ const btn = document.querySelector('.btn')
 const input = document.querySelector('.input')
 const info = document.querySelector('.info')
 const title = document.querySelector('.title')
+const welcome = document.querySelector('.welcome')
+const par_info = document.querySelector('.par_info')
 input.addEventListener('keypress', func)
 btn.addEventListener('click', btnFunc)
 
@@ -23,6 +25,8 @@ function btnFunc(){
         console.log(b);
         title.innerText = 'Result for ' + `"${word}"`
         info.innerText = extract
+        welcome.innerText = ''
+        par_info.innerText = ''
         if(b[-1].ns === 0){
             title.innerText = 'No results'
             info.innerText = ''
