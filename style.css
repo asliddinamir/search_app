@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #2e2e2e
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.card {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h2{
+    color: #ccc;
+    margin-block: 1%;
+    font-size: 2rem;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -3rem;
+}
+
+.btn i {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #ccc;
+}
+
+.inputs input {
+    border-bottom: 1px solid grey !important;
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    color: #ccc;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.input:focus {
+    border-bottom: 1px solid red !important;
+}
+
+
+.stats .title{
+    color: rgb(190, 190, 53);
+    font-size: 2rem;
+}
+
+.stats .info{
+    color: #ccc;
+    line-height: 2;
+}
+
+footer {
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background: #222;
+    padding-block: 1rem;
+    z-index: 1000;
+}
+
+.name {
+    font-size: .9rem;
+    color: white;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.name a {
+    color: rgb(76, 196, 60);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media(max-width:1140px) {
+    .card {
+        width: 90%;
+    }
+}
